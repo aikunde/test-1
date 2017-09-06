@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加用户</title>
+<link rel="stylesheet" href="css/style.css" media="screen"
+	type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<script src="js/modernizr.js"></script>
+</head>
+<body style="background: url(img/hengfu.jpg)">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">通讯录</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="txl.jsp">联系人</a></li>
+					<li class="active"><a href="addUser1.html">添加联系人</a></li>
+					<li><a href="export.html">导出联系人</a></li>
+					<li><a href="import.html">导入联系人</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<form name="addUser1" action="handleAdd.jsp" method="post">
+		<input type="text" name="uname" placeholder="请输入联系人姓名"
+			class="myInput inputText" required /> <input type="text" name="ujob"
+			placeholder="请输入联系人工作" class="myInput inputText" required /> <input
+			type="text" name="unick" placeholder="请输入联系人昵称"
+			class="myInput inputText" required /> <input type="text"
+			name="uemail" placeholder="请输入联系人邮箱" class="myInput inputText"
+			required /> <input type="text" name="udate" placeholder="请输入联系人生日"
+			class="myInput inputText" required />
+		<textarea rows="4" cols="50" name="umessage" placeholder="备注信息"
+			class="myTextarea" required></textarea>
+		<input name="submit" class="myBtn" type="submit" value="提交" /> <input
+			type="reset" name="reset" class="myBtn" value="重置" />
+		<!-- 返回txl.jsp页面：<input name="returnTXL" class="myBtn" type="button" value="返回" onclick="JavaScript:window.location.href='txl.jsp'"/> -->
+	</form>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
